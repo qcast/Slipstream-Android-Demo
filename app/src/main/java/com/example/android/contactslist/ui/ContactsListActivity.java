@@ -55,13 +55,13 @@ public class ContactsListActivity extends FragmentActivity implements
         }
         super.onCreate(savedInstanceState);
 
-        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             getWindow().setStatusBarColor(getResources().getColor(android.R.color.holo_red_dark));
-        }*/
+        }
         // Set main content view. On smaller screen devices this is a single pane view with one
         // fragment. One larger screen devices this is a two pane view with two fragments.
-        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         // Check if two pane bool is set based on resource directories
         isTwoPaneLayout = getResources().getBoolean(R.bool.has_two_panes);
